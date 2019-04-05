@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Eventos JS</title>
+    </head>
+    <body>
+        <input type="button" value="Haz click" onclick="alert('Has hecho click!');"><br/>
+        <input type="button" value="Haz click 2" onclick="haHechoClick();">    <br/>    
+        <input id="button3" type="button" value="Haz click 3"><br/>
+        <input id="button4" type="button" value="Haz click 4"><br/>
+        <script>
+            function haHechoClick() {
+                alert('JS - Has hecho click!');
+            }
+            document.getElementById("button3").onclick = haHechoClick;
+            document.getElementById("button4").addEventListener("click", haHechoClick);
+            document.write("<p>Parrafo1</p><p>Parrafo1</p>");
+            var h1 = document.createElement("H1");
+            document.getElementsByTagName("body")[0].appendChild(h1);
+            h1.appendChild(document.createTextNode("Añadido por DOM"));
+        </script>
+    </body>
+</html>
