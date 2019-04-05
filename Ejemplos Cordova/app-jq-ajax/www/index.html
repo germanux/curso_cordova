@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" 
+        content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'; media-src *; img-src 'self' data: content:;" />
+
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Ejemplo AJAX y qQuery</title>
+    <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
+</head>
+
+<body>
+    <div data-role="page">
+        <header data-role="header">
+            <h1>App Ajax jQueryMobile</h1>
+        </header>
+        <section data-role="content">
+            <p>Visualización del tiempo</p>
+            <label for="text-ciudad">Ciudad:</label>
+            <input type="text" name="text-ciudad" id="text-ciudad" value="" placeholder="introduzca ciudad"/>
+            
+            <label for="text-temp">Temperatura:</label>
+            <input type="text" name="text-temp" id="text-temp" value="" placeholder="Esperando temp" readonly="true"/>
+            <input type="button" id="btn-enviar" value="Pedir"/>
+        </section>
+        <div id="deviceready" class="blink" data-role="footer">
+            <p class="event listening">Connecting to Device</p>
+            <p class="event received">Device is Ready</p>
+        </div>        
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
