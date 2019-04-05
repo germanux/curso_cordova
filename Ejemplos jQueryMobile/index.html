@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
 </head>
+
 <body>
-    <div data-role="page">
+    <div data-role="page" id="home">
         <div data-role="header" data-theme="b">
             <h1>Cabecera</h1>
+            <a href="#acercade">Acerca de</a>
+            <a href="#dialogo1" data-transition="pop">Dialogo 1</a>
+            <a href="#dialogo2" data-rel="popup">Dialogo 2</a>
         </div>
-        <div  data-role="content" data-theme="b">
-            <h1>Contenido<br/></h1> <br/>
-            <h2>Contenido Contenido<br/><br/>Contenido<br/><br/> </h2>
+        <div data-role="content" data-theme="b">
+            <h1>Pagina inicio<br /></h1> <br />
+            <h2>Contenido Contenido<br /><br />Contenido<br /><br /> </h2>
         </div>
-        <div data-role="footer" data-theme="b"><h4>Pie de página</h4></div>
+        <div data-role="footer" data-theme="b">
+            <h4>Pie de página</h4>
+        </div>
+
+        <div data-role="popup" id="dialogo2" data-close-btn="right">
+            <div data-role="header" data-theme="b">
+                <h1>Dialogo 2 PupUp</h1>
+                <a href="#" data-role="button" data-rel="back" data-icon="delete"> </a>
+            </div>
+            <div data-role="content" data-theme="b">
+                <h1>Contenido Contenido<br /></h1> <br />
+                <h2>Contenido Contenido<br /><br />Contenido<br /><br /> </h2>
+            </div>
+        </div>
+
+    </div>
+    <div data-role="page" id="acercade">
+        <div data-role="header" data-theme="b" data-add-back-btn="true">
+            <h1>Cabecera</h1>
+        </div>
+        <div data-role="content" data-theme="b">
+            <h1>Acerca de<br /></h1> <br />
+            <h2>Somos una oirgnacion bla bla<br />Contenido<br /><br /> </h2>
+        </div>
+        <div data-role="footer" data-theme="b">
+            <h4>Pie de página</h4>
+        </div>
+    </div>
+    <div data-role="page" id="dialogo1" data-dialog="true" data-close-btn="right">
+        <div data-role="header" data-theme="b" data-add-back-btn="true">
+            <h1>Dialogo 1</h1>
+        </div>
+        <div data-role="content" data-theme="b">
+            <h1>Contenido Contenido<br /></h1> <br />
+            <h2>Contenido Contenido<br /><br />Contenido<br /><br /> </h2>
+        </div>
     </div>
 
     <script src="jquery.mobile-1.4.5/jquery-1.11.1.js"></script>
-    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>    
+    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
 </body>
+
 </html>
