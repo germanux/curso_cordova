@@ -1,0 +1,18 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.pronoide.plugin.sendmail": {
+            "PACKAGE_NAME": "com.pronoide.sendmailtest"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.pronoide.sendmailtest"
+        }
+    },
+    "dependent_plugins": {}
+}
