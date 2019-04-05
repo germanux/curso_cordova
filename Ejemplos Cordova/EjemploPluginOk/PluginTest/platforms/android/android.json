@@ -1,0 +1,47 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"PruebaPlugin\"><param name=\"android-package\" value=\"com.pronoide.plugin.pruebaplugin.PruebaPlugin\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "com.loquesea.prueba": {
+      "PACKAGE_NAME": "io.cordova.plugintest"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.cordova.plugintest"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "com.loquesea.prueba.PruebaPlugin",
+      "file": "plugins/com.loquesea.prueba/www/pruebaplugin.js",
+      "pluginId": "com.loquesea.prueba",
+      "clobbers": [
+        "pruebaplugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "com.loquesea.prueba": "1.0.0",
+    "cordova-plugin-whitelist": "1.3.0"
+  }
+}
